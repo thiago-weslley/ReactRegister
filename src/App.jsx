@@ -1,12 +1,14 @@
 import React from 'react';
+import Background from './assets/logoHome.svg';
 import { Container, Img, ContainerItems, H1, ImputWraper, Label, Input, Button } from './style'
+
 
 const App = () => {
   const hello = 'Olá!';
 
   return (
     <Container>
-      <Img />
+      <Img src={Background} alt='Logo-imagem' />
 
       <ContainerItems>
         <H1>{hello}</H1>
