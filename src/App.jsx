@@ -15,12 +15,12 @@ const App = () => {
         <H1>{hello}</H1>
 
         <ImputWraper>
-          <Label for='name'>Nome:</Label>
+          <Label htmlFor='name'>Nome:</Label>
           <Input id='name' type='text' placeholder='Nome' required />
         </ImputWraper>
 
         <ImputWraper>
-          <Label for='age'>Idade:</Label>
+          <Label htmlFor='age'>Idade:</Label>
           <Input id='age' type='number' placeholder='Idade' required />
         </ImputWraper>
 
