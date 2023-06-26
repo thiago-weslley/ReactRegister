@@ -7,8 +7,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6rem;
-
+    gap: 3rem;
 `;
 
 export const Img = styled.img`
@@ -21,11 +20,11 @@ export const ContainerItems = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 95%;
     gap: 4rem;
     padding: 6rem 2rem;
     border-radius: 4rem 4rem 0 0;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, .4);
     background-image: linear-gradient(
         157deg,
         rgba(255, 255, 255, 0.6) 0.84%,
@@ -35,9 +34,11 @@ export const ContainerItems = styled.div`
 `;
 
 export const H1 = styled.h1`
+    font-weight: 800;
     color: #DA7C2F;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 `;
 
 export const ImputWraper = styled.div`
@@ -49,29 +50,46 @@ export const ImputWraper = styled.div`
 `;
 
 export const Label = styled.label`
-    align-self: flex-start;
-    margin-left: 4.5rem;
+    font-weight: 600;
     font-size: 2.2rem;
+    @media (min-width: 500px) {
+        align-self: flex-start;
+        margin-left: 5rem;
+    }
 `;
 
 export const Input = styled.input`
     padding-left: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     width: 90%;
     height: 5rem;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px 0px #00000040;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
     border: none;
+    &:focus {
+        outline: 2px solid #DA7C2F;
+    }
 `;
 
 export const Button = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     width: 90%;
     height: 5rem;
     margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
     color: #FFF;
     border: none;
     background: #000000CC;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
     cursor: pointer;
+    transition: all .15s ease-in-out;
+    &:hover {
+        background: #000000;
+    }
 `;

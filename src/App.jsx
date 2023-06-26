@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from './assets/logoHome.svg';
-import { Container, Img, ContainerItems, H1, ImputWraper, Label, Input, Button } from './style'
+import Arrow from './assets/arrow.svg';
+import { Container, Img, ContainerItems, H1, ImputWraper, Label, Input, Button } from './style';
 
 
 const App = () => {
@@ -14,16 +15,16 @@ const App = () => {
         <H1>{hello}</H1>
 
         <ImputWraper>
-          <Label>Nome:</Label>
-          <Input placeholder='Nome' />
+          <Label for='name'>Nome:</Label>
+          <Input id='name' type='text' placeholder='Nome' required />
         </ImputWraper>
 
         <ImputWraper>
-          <Label>Idade:</Label>
-          <Input placeholder='Idade' />
+          <Label for='age'>Idade:</Label>
+          <Input id='age' type='number' placeholder='Idade' required />
         </ImputWraper>
 
-        <Button>cadastrar</Button>
+        <Button>cadastrar<img src={Arrow} /></Button>
       </ContainerItems>
     </Container>
   );

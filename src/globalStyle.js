@@ -13,6 +13,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: 'Poppins', sans-serif;
     }
 
     body {
@@ -32,4 +33,9 @@ export default createGlobalStyle`
         pointer-events: none;
         background-image: url('${BackgroundNoise}');
     }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
 `
