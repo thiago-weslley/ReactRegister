@@ -16,7 +16,7 @@ export const Img = styled.img`
 `;
 
 export const ContainerItems = styled.div`
-    height: 100%;
+    height: 200%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,3 +93,31 @@ export const Button = styled.button`
         background: #000000;
     }
 `;
+
+export const Ul = styled.ul`
+    width: 90%;
+`
+
+export const User = styled.li`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+    &:hover {
+        box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+`
+
+export const SpanUser = styled.span`
+    max-width: 65%;
+    width: 100%;
+`
+
+export const ButtonTrash = styled.button`
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+`
