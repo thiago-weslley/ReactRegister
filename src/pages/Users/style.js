@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 90%;
 `;
 
@@ -41,37 +41,6 @@ export const H1 = styled.h1`
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 `;
 
-export const ImputWraper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 3px;
-`;
-
-export const Label = styled.label`
-  font-weight: 600;
-  font-size: 2.2rem;
-  @media (min-width: 500px) {
-    align-self: flex-start;
-    margin-left: 5rem;
-  }
-`;
-
-export const Input = styled.input`
-  padding-left: 2.5rem;
-  font-size: 1.8rem;
-  font-weight: 300;
-  width: 90%;
-  height: 5rem;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
-  border: none;
-  &:focus {
-    outline: 2px solid #da7c2f;
-  }
-`;
-
 export const Button = styled.button`
   display: flex;
   align-items: center;
@@ -89,7 +58,38 @@ export const Button = styled.button`
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
+  img {
+    transform: scaleX(-1);
+  }
   &:hover {
     background: #000000;
   }
+`;
+
+export const Ul = styled.ul`
+  width: 90%;
+`;
+
+export const User = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+  &:hover {
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.5);
+  }
+`;
+
+export const SpanUser = styled.span`
+  max-width: 65%;
+  width: 100%;
+`;
+
+export const ButtonTrash = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 `;

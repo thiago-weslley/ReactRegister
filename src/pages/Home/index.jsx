@@ -1,10 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 
 //IMG
 import Background from "../../assets/logoHome.svg";
 import Arrow from "../../assets/arrow.svg";
-import Trash from "../../assets/trash.svg";
 
 //STYLE
 import {
@@ -16,10 +15,6 @@ import {
   Label,
   Input,
   Button,
-  Ul,
-  User,
-  SpanUser,
-  ButtonTrash,
 } from "./style";
 
 const App = () => {
@@ -35,21 +30,6 @@ const App = () => {
     });
 
     setUsers([...users, newUser]);
-  };
-
-  useEffect(() => {
-    const fechUsers = async () => {
-      const { data: newUser } = await axios.get("http://localhost:3000/users");
-      setUsers(newUser);
-    };
-
-    fechUsers();
-  }, []);
-
-  const deleteUser = async (userId) => {
-    await axios.delete(`http://localhost:3000/users/${userId}`);
-    const newUsers = users.filter((user) => user.id !== userId);
-    setUsers(newUsers);
   };
 
   return (
@@ -73,18 +53,6 @@ const App = () => {
           cadastrar
           <img src={Arrow} alt="arrow" />
         </Button>
-
-        <Ul>
-          {users.map((user) => (
-            <User key={user.id}>
-              <SpanUser>{user.name}</SpanUser>
-              <span>{user.age}</span>
-              <ButtonTrash onClick={() => deleteUser(user.id)}>
-                <img src={Trash} alt="trash" />
-              </ButtonTrash>
-            </User>
-          ))}
-        </Ul>
       </ContainerItems>
     </Container>
   );
