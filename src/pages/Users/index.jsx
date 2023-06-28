@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //IMG
 import Background from "../../assets/logoRegister.svg";
@@ -23,7 +23,7 @@ import {
 const Users = () => {
   const hello = "Usuários";
   const [users, setUsers] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fechUsers = async () => {
@@ -41,7 +41,7 @@ const Users = () => {
   };
 
   const goPushPage = () => {
-    history.push("/");
+    navigate("/");
   };
 
   return (

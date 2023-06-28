@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //IMG
 import Background from "../../assets/logoHome.svg";
@@ -24,7 +24,7 @@ const Home = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const addNewUser = async () => {
     const name = inputName.current.value;
@@ -41,7 +41,7 @@ const Home = () => {
 
     setUsers([...users, newUser]);
 
-    history.push("/usuarios");
+    navigate("/usuarios");
   };
 
   return (
