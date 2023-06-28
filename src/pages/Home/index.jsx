@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
 //IMG
-import Background from "./assets/logoHome.svg";
-import Arrow from "./assets/arrow.svg";
-import Trash from "./assets/trash.svg";
+import Background from "../../assets/logoHome.svg";
+import Arrow from "../../assets/arrow.svg";
+import Trash from "../../assets/trash.svg";
 
 //STYLE
 import {
