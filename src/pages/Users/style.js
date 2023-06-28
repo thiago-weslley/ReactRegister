@@ -11,12 +11,12 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
-  margin-top: 6rem;
+  margin-top: 14.5rem;
   width: 90%;
 `;
 
 export const ContainerItems = styled.div`
-  height: 200%;
+  height: 300%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,31 +39,6 @@ export const H1 = styled.h1`
   text-transform: uppercase;
   font-size: 4.5rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-`;
-
-export const Button = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 90%;
-  height: 5rem;
-  margin-top: 1.5rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: #fff;
-  border: none;
-  background: #000000cc;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-  img {
-    transform: scaleX(-1);
-  }
-  &:hover {
-    background: #000000;
-  }
 `;
 
 export const Ul = styled.ul`
@@ -92,4 +67,29 @@ export const ButtonTrash = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+`;
+
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  height: 5rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  background: #000000cc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  img {
+    transform: scaleX(-1);
+  }
+  &:hover {
+    background: #000000;
+  }
 `;

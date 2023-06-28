@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 //IMG
 import Background from "../../assets/logoRegister.svg";
@@ -22,6 +23,7 @@ import {
 const Users = () => {
   const hello = "Usuários";
   const [users, setUsers] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     const fechUsers = async () => {
@@ -36,6 +38,10 @@ const Users = () => {
     await axios.delete(`http://localhost:3000/users/${userId}`);
     const newUsers = users.filter((user) => user.id !== userId);
     setUsers(newUsers);
+  };
+
+  const goPushPage = () => {
+    history.push("/");
   };
 
   return (
@@ -57,7 +63,7 @@ const Users = () => {
           ))}
         </Ul>
 
-        <Button>
+        <Button onClick={goPushPage}>
           <img src={Arrow} alt="arrow" />
           voltar
         </Button>
