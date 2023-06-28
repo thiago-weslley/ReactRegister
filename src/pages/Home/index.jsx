@@ -17,7 +17,7 @@ import {
   Button,
 } from "./style";
 
-const App = () => {
+const Home = () => {
   const hello = "Olá!";
   const [users, setUsers] = useState([]);
   const inputName = useRef();
@@ -58,4 +58,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

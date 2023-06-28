@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import BackgroundNoise from "./assets/background/noise.png";
+import BackgroundNoise from "../assets/background/noise.png";
 
 export default createGlobalStyle`
 
