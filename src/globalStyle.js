@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import BackgroundNoise from './assets/background/noise.png';
+import BackgroundNoise from "./assets/background/noise.png";
 
 export default createGlobalStyle`
 
@@ -39,4 +39,4 @@ export default createGlobalStyle`
     input[type="number"]::-webkit-outer-spin-button {
     appearance: none;
 }
-`
+`;
