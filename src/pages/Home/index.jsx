@@ -27,10 +27,18 @@ const Home = () => {
   const history = useHistory();
 
   const addNewUser = async () => {
+    const name = inputName.current.value;
+    const age = inputAge.current.value;
+
+    if (name.trim() === "" || age.trim() === "") {
+      return;
+    }
+
     const { data: newUser } = await axios.post("http://localhost:3000/users", {
-      name: inputName.current.value,
-      age: inputAge.current.value,
+      name: name,
+      age: age,
     });
+
     setUsers([...users, newUser]);
 
     history.push("/usuarios");
