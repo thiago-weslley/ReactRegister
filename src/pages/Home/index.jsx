@@ -9,10 +9,10 @@ import Arrow from "../../assets/arrow.svg";
 
 //STYLE
 import H1 from "../../components/Title";
+import ContainerItems from "../../components/containerItens";
 import {
   Container,
   Img,
-  ContainerItems,
   ImputWraper,
   Label,
   Input,
