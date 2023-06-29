@@ -48,7 +48,7 @@ const Users = () => {
     <Container>
       <Img src={Background} alt="Logo-imagem" />
 
-      <ContainerItems>
+      <ContainerItems isContainerUsers={true}>
         <H1>{hello}</H1>
 
         <Ul>

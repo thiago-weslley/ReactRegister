@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerItems = styled.div`
-  height: 200%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,10 @@ export const ContainerItems = styled.div`
     rgba(255, 255, 255, 0.6) 0.85%,
     rgba(255, 255, 255, 0.15) 100%
   );
+
+  ${(props) =>
+    props.isContainerUsers &&
+    `
+        height: 400%;
+  `}
 `;
