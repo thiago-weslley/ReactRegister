@@ -9,14 +9,14 @@ import Arrow from "../../assets/arrow.svg";
 
 //STYLE
 import H1 from "../../components/Title";
-import ContainerItems from "../../components/containerItens";
+import ContainerItems from "../../components/ContainerItens";
+import Button from "../../components/Button";
 import {
   Container,
   Img,
   ImputWraper,
   Label,
   Input,
-  Button,
 } from "./style";
 
 const Home = () => {

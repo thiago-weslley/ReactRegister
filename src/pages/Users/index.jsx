@@ -9,16 +9,9 @@ import Trash from "../../assets/trash.svg";
 
 //STYLE
 import H1 from "../../components/Title";
-import ContainerItems from "../../components/containerItens";
-import {
-  Container,
-  Img,
-  Button,
-  Ul,
-  User,
-  SpanUser,
-  ButtonTrash,
-} from "./style";
+import ContainerItems from "../../components/ContainerItens";
+import Button from "../../components/Button";
+import { Container, Img, Ul, User, SpanUser, ButtonTrash } from "./style";
 
 const Users = () => {
   const hello = "Usuários";
@@ -63,7 +56,7 @@ const Users = () => {
           ))}
         </Ul>
 
-        <Button onClick={goPushPage}>
+        <Button onClick={goPushPage} isBackButton={true}>
           <img src={Arrow} alt="arrow" />
           voltar
         </Button>
