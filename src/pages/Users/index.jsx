@@ -8,11 +8,11 @@ import Arrow from "../../assets/arrow.svg";
 import Trash from "../../assets/trash.svg";
 
 //STYLE
+import H1 from "../../components/Title";
 import {
   Container,
   Img,
   ContainerItems,
-  H1,
   Button,
   Ul,
   User,

@@ -8,12 +8,11 @@ import Background from "../../assets/logoHome.svg";
 import Arrow from "../../assets/arrow.svg";
 
 //STYLE
-import H1 from "../../components/Title"
+import H1 from "../../components/Title";
 import {
   Container,
   Img,
   ContainerItems,
-  H1,
   ImputWraper,
   Label,
   Input,
