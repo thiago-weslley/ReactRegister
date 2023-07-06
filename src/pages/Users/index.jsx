@@ -18,9 +18,11 @@ const Users = () => {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
 
+  const baseUrl = "https://api-register-beta.vercel.app";
+
   useEffect(() => {
     const fechUsers = async () => {
-      const { data: newUser } = await axios.get("http://localhost:3000/users");
+      const { data: newUser } = await axios.get(`${baseUrl}/users`);
       setUsers(newUser);
     };
 
@@ -28,7 +30,7 @@ const Users = () => {
   }, []);
 
   const deleteUser = async (userId) => {
-    await axios.delete(`http://localhost:3000/users/${userId}`);
+    await axios.delete(`${baseUrl}/users/${userId}`);
     const newUsers = users.filter((user) => user.id !== userId);
     setUsers(newUsers);
   };

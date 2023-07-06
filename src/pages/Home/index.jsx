@@ -11,13 +11,7 @@ import Arrow from "../../assets/arrow.svg";
 import H1 from "../../components/Title";
 import ContainerItems from "../../components/ContainerItens";
 import Button from "../../components/Button";
-import {
-  Container,
-  Img,
-  ImputWraper,
-  Label,
-  Input,
-} from "./style";
+import { Container, Img, ImputWraper, Label, Input } from "./style";
 
 const Home = () => {
   const hello = "Olá!";
@@ -25,6 +19,8 @@ const Home = () => {
   const inputName = useRef();
   const inputAge = useRef();
   const navigate = useNavigate();
+
+  const baseUrl = "https://api-register-beta.vercel.app";
 
   const addNewUser = async () => {
     const name = inputName.current.value;
@@ -34,7 +30,7 @@ const Home = () => {
       return;
     }
 
-    const { data: newUser } = await axios.post("http://localhost:3000/users", {
+    const { data: newUser } = await axios.post(`${baseUrl}/users`, {
       name: name,
       age: age,
     });
