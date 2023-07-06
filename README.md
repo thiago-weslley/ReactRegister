@@ -49,7 +49,7 @@ Pode ser testado pelo deploy do projeto através do <a href="https://react-regis
 
 Ou Para executar o projeto localmente, siga as instruções abaixo:
 
-1. Clone o repositório: git clone https://github.com/seu-usuario/seu-projeto.git.
+1. Clone o repositório: git clone https://github.com/thiago-weslley/ReactRegister.git.
 2. Acesse o diretório do projeto: cd seu-projeto.
 3. Instale as dependências: npm install.
 4. Inicie o servidor de desenvolvimento: npm run dev.
