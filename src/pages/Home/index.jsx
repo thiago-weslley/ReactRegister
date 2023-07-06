@@ -9,9 +9,8 @@ import Arrow from "../../assets/arrow.svg";
 
 //STYLE
 import H1 from "../../components/Title";
-import ContainerItems from "../../components/ContainerItens";
 import Button from "../../components/Button";
-import { Container, Img, ImputWraper, Label, Input } from "./style";
+import { Container, Img, ImputWraper, Label, Input, ContainerItems } from "./style";
 
 const Home = () => {
   const hello = "Olá!";

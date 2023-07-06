@@ -9,9 +9,8 @@ import Trash from "../../assets/trash.svg";
 
 //STYLE
 import H1 from "../../components/Title";
-import ContainerItems from "../../components/ContainerItens";
 import Button from "../../components/Button";
-import { Container, Img, Ul, User, SpanUser, ButtonTrash } from "./style";
+import { Container, Img, Ul, User, SpanUser, ButtonTrash, ContainerItems } from "./style";
 
 const Users = () => {
   const hello = "Usuários";
